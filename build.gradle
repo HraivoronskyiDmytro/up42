@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'com.up42.qa'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.json:json:20211205'
+    testImplementation 'org.testng:testng:7.5'
+    testImplementation 'io.rest-assured:rest-assured:4.5.1'
+    testImplementation 'io.rest-assured:json-schema-validator:4.5.1'
+    testImplementation 'org.awaitility:awaitility:4.1.1'
+}
+
+test {
+    useTestNG {
+        useDefaultListeners = true
+    }
+}

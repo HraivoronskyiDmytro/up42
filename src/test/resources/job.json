@@ -1,0 +1,512 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "data": {
+        "id": "84abfe29-ff98-4907-908c-a7df464d3aae",
+        "displayId": "84abfe29",
+        "createdAt": "2022-02-25T08:41:36.599955Z",
+        "updatedAt": "2022-02-25T08:41:39.963765Z",
+        "createdBy": {
+          "id": "7922d5d5-446f-449a-96a3-bba42cd3d4c4",
+          "type": "API_KEY"
+        },
+        "updatedBy": {
+          "id": "7922d5d5-446f-449a-96a3-bba42cd3d4c4",
+          "type": "API_KEY"
+        },
+        "status": "NOT_STARTED",
+        "name": null,
+        "startedAt": null,
+        "finishedAt": null,
+        "inputs": {
+          "nasa-modis:1": {
+            "bbox": [
+              13.365373,
+              52.49582,
+              13.385796,
+              52.510455
+            ],
+            "limit": 1,
+            "time": "2018-12-01T00:00:00+00:00/2020-12-31T23:59:59+00:00",
+            "zoom_level": 9,
+            "imagery_layers": [
+              "MODIS_Terra_CorrectedReflectance_TrueColor"
+            ]
+          },
+          "sharpening:1": {
+            "strength": "medium"
+          }
+        },
+        "mode": "DEFAULT",
+        "workflowId": "bb0efed6-b636-4d6f-b0c9-cfcc0d6c2801",
+        "workflowName": "QA coding challenge workflow"
+      },
+      "error": null
+    }
+  ],
+  "required": [
+    "data",
+    "error"
+  ],
+  "properties": {
+    "data": {
+      "$id": "#/properties/data",
+      "type": "object",
+      "title": "The data schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "id": "84abfe29-ff98-4907-908c-a7df464d3aae",
+          "displayId": "84abfe29",
+          "createdAt": "2022-02-25T08:41:36.599955Z",
+          "updatedAt": "2022-02-25T08:41:39.963765Z",
+          "createdBy": {
+            "id": "7922d5d5-446f-449a-96a3-bba42cd3d4c4",
+            "type": "API_KEY"
+          },
+          "updatedBy": {
+            "id": "7922d5d5-446f-449a-96a3-bba42cd3d4c4",
+            "type": "API_KEY"
+          },
+          "status": "NOT_STARTED",
+          "name": null,
+          "startedAt": null,
+          "finishedAt": null,
+          "inputs": {
+            "nasa-modis:1": {
+              "bbox": [
+                13.365373,
+                52.49582,
+                13.385796,
+                52.510455
+              ],
+              "limit": 1,
+              "time": "2018-12-01T00:00:00+00:00/2020-12-31T23:59:59+00:00",
+              "zoom_level": 9,
+              "imagery_layers": [
+                "MODIS_Terra_CorrectedReflectance_TrueColor"
+              ]
+            },
+            "sharpening:1": {
+              "strength": "medium"
+            }
+          },
+          "mode": "DEFAULT",
+          "workflowId": "bb0efed6-b636-4d6f-b0c9-cfcc0d6c2801",
+          "workflowName": "QA coding challenge workflow"
+        }
+      ],
+      "required": [
+        "id",
+        "displayId",
+        "createdAt",
+        "updatedAt",
+        "createdBy",
+        "updatedBy",
+        "status",
+        "name",
+        "startedAt",
+        "finishedAt",
+        "inputs",
+        "mode",
+        "workflowId",
+        "workflowName"
+      ],
+      "properties": {
+        "id": {
+          "$id": "#/properties/data/properties/id",
+          "type": "string",
+          "title": "The id schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "84abfe29-ff98-4907-908c-a7df464d3aae"
+          ]
+        },
+        "displayId": {
+          "$id": "#/properties/data/properties/displayId",
+          "type": "string",
+          "title": "The displayId schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "84abfe29"
+          ]
+        },
+        "createdAt": {
+          "$id": "#/properties/data/properties/createdAt",
+          "type": "string",
+          "title": "The createdAt schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2022-02-25T08:41:36.599955Z"
+          ]
+        },
+        "updatedAt": {
+          "$id": "#/properties/data/properties/updatedAt",
+          "type": "string",
+          "title": "The updatedAt schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2022-02-25T08:41:39.963765Z"
+          ]
+        },
+        "createdBy": {
+          "$id": "#/properties/data/properties/createdBy",
+          "type": "object",
+          "title": "The createdBy schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "id": "7922d5d5-446f-449a-96a3-bba42cd3d4c4",
+              "type": "API_KEY"
+            }
+          ],
+          "required": [
+            "id",
+            "type"
+          ],
+          "properties": {
+            "id": {
+              "$id": "#/properties/data/properties/createdBy/properties/id",
+              "type": "string",
+              "title": "The id schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": "",
+              "examples": [
+                "7922d5d5-446f-449a-96a3-bba42cd3d4c4"
+              ]
+            },
+            "type": {
+              "$id": "#/properties/data/properties/createdBy/properties/type",
+              "type": "string",
+              "title": "The type schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": "",
+              "examples": [
+                "API_KEY"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "updatedBy": {
+          "$id": "#/properties/data/properties/updatedBy",
+          "type": "object",
+          "title": "The updatedBy schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "id": "7922d5d5-446f-449a-96a3-bba42cd3d4c4",
+              "type": "API_KEY"
+            }
+          ],
+          "required": [
+            "id",
+            "type"
+          ],
+          "properties": {
+            "id": {
+              "$id": "#/properties/data/properties/updatedBy/properties/id",
+              "type": "string",
+              "title": "The id schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": "",
+              "examples": [
+                "7922d5d5-446f-449a-96a3-bba42cd3d4c4"
+              ]
+            },
+            "type": {
+              "$id": "#/properties/data/properties/updatedBy/properties/type",
+              "type": "string",
+              "title": "The type schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": "",
+              "examples": [
+                "API_KEY"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "status": {
+          "$id": "#/properties/data/properties/status",
+          "type": "string",
+          "title": "The status schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "NOT_STARTED"
+          ]
+        },
+        "name": {
+          "$id": "#/properties/data/properties/name",
+          "type": "null",
+          "title": "The name schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "startedAt": {
+          "$id": "#/properties/data/properties/startedAt",
+          "type": "null",
+          "title": "The startedAt schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "finishedAt": {
+          "$id": "#/properties/data/properties/finishedAt",
+          "type": "null",
+          "title": "The finishedAt schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": null,
+          "examples": [
+            null
+          ]
+        },
+        "inputs": {
+          "$id": "#/properties/data/properties/inputs",
+          "type": "object",
+          "title": "The inputs schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "nasa-modis:1": {
+                "bbox": [
+                  13.365373,
+                  52.49582,
+                  13.385796,
+                  52.510455
+                ],
+                "limit": 1,
+                "time": "2018-12-01T00:00:00+00:00/2020-12-31T23:59:59+00:00",
+                "zoom_level": 9,
+                "imagery_layers": [
+                  "MODIS_Terra_CorrectedReflectance_TrueColor"
+                ]
+              },
+              "sharpening:1": {
+                "strength": "medium"
+              }
+            }
+          ],
+          "required": [
+            "nasa-modis:1",
+            "sharpening:1"
+          ],
+          "properties": {
+            "nasa-modis:1": {
+              "$id": "#/properties/data/properties/inputs/properties/nasa-modis%3A1",
+              "type": "object",
+              "title": "The nasa-modis:1 schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": {},
+              "examples": [
+                {
+                  "bbox": [
+                    13.365373,
+                    52.49582,
+                    13.385796,
+                    52.510455
+                  ],
+                  "limit": 1,
+                  "time": "2018-12-01T00:00:00+00:00/2020-12-31T23:59:59+00:00",
+                  "zoom_level": 9,
+                  "imagery_layers": [
+                    "MODIS_Terra_CorrectedReflectance_TrueColor"
+                  ]
+                }
+              ],
+              "required": [
+                "bbox",
+                "limit",
+                "time",
+                "zoom_level",
+                "imagery_layers"
+              ],
+              "properties": {
+                "bbox": {
+                  "$id": "#/properties/data/properties/inputs/properties/nasa-modis%3A1/properties/bbox",
+                  "type": "array",
+                  "title": "The bbox schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": [],
+                  "examples": [
+                    [
+                      13.365373,
+                      52.49582
+                    ]
+                  ],
+                  "additionalItems": true,
+                  "items": {
+                    "$id": "#/properties/data/properties/inputs/properties/nasa-modis%3A1/properties/bbox/items",
+                    "anyOf": [
+                      {
+                        "$id": "#/properties/data/properties/inputs/properties/nasa-modis%3A1/properties/bbox/items/anyOf/0",
+                        "type": "number",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": 0.0,
+                        "examples": [
+                          13.365373,
+                          52.49582
+                        ]
+                      }
+                    ]
+                  }
+                },
+                "limit": {
+                  "$id": "#/properties/data/properties/inputs/properties/nasa-modis%3A1/properties/limit",
+                  "type": "integer",
+                  "title": "The limit schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0,
+                  "examples": [
+                    1
+                  ]
+                },
+                "time": {
+                  "$id": "#/properties/data/properties/inputs/properties/nasa-modis%3A1/properties/time",
+                  "type": "string",
+                  "title": "The time schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "",
+                  "examples": [
+                    "2018-12-01T00:00:00+00:00/2020-12-31T23:59:59+00:00"
+                  ]
+                },
+                "zoom_level": {
+                  "$id": "#/properties/data/properties/inputs/properties/nasa-modis%3A1/properties/zoom_level",
+                  "type": "integer",
+                  "title": "The zoom_level schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": 0,
+                  "examples": [
+                    9
+                  ]
+                },
+                "imagery_layers": {
+                  "$id": "#/properties/data/properties/inputs/properties/nasa-modis%3A1/properties/imagery_layers",
+                  "type": "array",
+                  "title": "The imagery_layers schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": [],
+                  "examples": [
+                    [
+                      "MODIS_Terra_CorrectedReflectance_TrueColor"
+                    ]
+                  ],
+                  "additionalItems": true,
+                  "items": {
+                    "$id": "#/properties/data/properties/inputs/properties/nasa-modis%3A1/properties/imagery_layers/items",
+                    "anyOf": [
+                      {
+                        "$id": "#/properties/data/properties/inputs/properties/nasa-modis%3A1/properties/imagery_layers/items/anyOf/0",
+                        "type": "string",
+                        "title": "The first anyOf schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "MODIS_Terra_CorrectedReflectance_TrueColor"
+                        ]
+                      }
+                    ]
+                  }
+                }
+              },
+              "additionalProperties": true
+            },
+            "sharpening:1": {
+              "$id": "#/properties/data/properties/inputs/properties/sharpening%3A1",
+              "type": "object",
+              "title": "The sharpening:1 schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": {},
+              "examples": [
+                {
+                  "strength": "medium"
+                }
+              ],
+              "required": [
+                "strength"
+              ],
+              "properties": {
+                "strength": {
+                  "$id": "#/properties/data/properties/inputs/properties/sharpening%3A1/properties/strength",
+                  "type": "string",
+                  "title": "The strength schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": "",
+                  "examples": [
+                    "medium"
+                  ]
+                }
+              },
+              "additionalProperties": true
+            }
+          },
+          "additionalProperties": true
+        },
+        "mode": {
+          "$id": "#/properties/data/properties/mode",
+          "type": "string",
+          "title": "The mode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "DEFAULT"
+          ]
+        },
+        "workflowId": {
+          "$id": "#/properties/data/properties/workflowId",
+          "type": "string",
+          "title": "The workflowId schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "bb0efed6-b636-4d6f-b0c9-cfcc0d6c2801"
+          ]
+        },
+        "workflowName": {
+          "$id": "#/properties/data/properties/workflowName",
+          "type": "string",
+          "title": "The workflowName schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "QA coding challenge workflow"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "error": {
+      "$id": "#/properties/error",
+      "type": "null",
+      "title": "The error schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": null,
+      "examples": [
+        null
+      ]
+    }
+  },
+  "additionalProperties": true
+}
